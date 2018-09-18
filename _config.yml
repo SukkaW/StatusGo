@@ -3,18 +3,24 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: Your Site Name
 description:
-author: John Doe
-language:
-timezone:
+orgnization: Your org Name
+language: zh-CN
+
+imezone: Asia/Shanghai
+
+# Favicon
+favicon:
+apple_touch_icon:
+
+description:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /
-permalink: :year/:month/:day/:title/
+url:
+root:
+permalink: /:title/
 permalink_defaults:
 
 # Directory
@@ -38,20 +44,11 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
-  line_number: true
+  enable: false
+  line_number: false
   auto_detect: false
-  tab_replace:
-  
-# Home page setting
-# path: Root path for your blogs index page. (default = '')
-# per_page: Posts displayed per page. (0 = disable pagination)
-# order_by: Posts order. (Order by date descending by default)
-index_generator:
-  path: ''
-  per_page: 10
-  order_by: -date
-  
+  tab_replace: false
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -72,9 +69,5 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: statusgo
 
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type:
