@@ -1,0 +1,32 @@
+<header>
+    <nav class="navbar navbar-expand-lg bg-light sk-pt-4 sk-pb-4">
+        <div class="container">
+            <div class="sk-ml-3 d-lg-none"></div>
+            <h1 class="h5 navbar-brand sk-mb-0 sk-text-normal">
+            <% if(config.header_logo) { %>
+                <img src="<% config.header_logo %>" class="sk-pr-2">
+            <% } %>
+            <%- config.title %>
+            </h1>
+
+            <div class="mr-auto"></div>
+            <button class="navbar-toggler sk-text-dark" type="button" data-toggle="collapse" data-target="#header-link" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                </svg>
+            </button>
+
+            <div class="collapse navbar-collapse" id="header-link">
+                <ul class="navbar-nav ml-auto sk-pl-3">
+                    <% for (var i in config.header_link){ %>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<%= config.header_link[i].link %>" target="_blank" rel="noopenner"><%= i %></a>
+                        </li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
