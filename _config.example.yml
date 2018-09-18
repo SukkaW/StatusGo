@@ -4,7 +4,6 @@
 
 # Site
 title: Your Site Name
-description:
 orgnization: Your org Name
 language: zh-CN
 
@@ -16,10 +15,14 @@ apple_touch_icon:
 
 description:
 
+# Link
+
+header_link:
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url:
-root:
+url: https://example.com/
+root: /
 permalink: /:title/
 permalink_defaults:
 
